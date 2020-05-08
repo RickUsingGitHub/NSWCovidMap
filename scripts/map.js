@@ -696,9 +696,7 @@ $(window).on('load', function() {
     $('#points-legend form label span').each(function(i) {
       var legendIcon = (markerColors[i].indexOf('.') > 0)
         ? '<img src="' + markerColors[i] + '" class="markers-legend-icon">'
-        : '&nbsp;<i class="fa fa-map-marker" style="color: '
-          + markerColors[i]
-          + '"></i>';
+        : '&nbsp;';
       $(this).prepend(legendIcon);
     });
 
