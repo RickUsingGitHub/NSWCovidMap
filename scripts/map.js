@@ -695,7 +695,7 @@ $(window).on('load', function() {
     // Append icons to categories in markers legend
     $('#points-legend form label span').each(function(i) {
       var legendIcon = (markerColors[i].indexOf('.') > 0)
-        ? '<img src="' + markerColors[i] + '" class="markers-legend-icon">'
+        ? '&nbsp;'
         : '&nbsp;';
       $(this).prepend(legendIcon);
     });
