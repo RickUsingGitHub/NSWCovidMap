@@ -762,7 +762,12 @@ $(window).on('load', function() {
         $('div.leaflet-top').prepend('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + title + subtitle + '</div>');
       } else if (dispTitle == 'topcenter') {
         $('#map').append('<div class="div-center"></div>');
-        $('.div-center').append('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + title + subtitle + '</div>');
+        $('.div-center').append('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + title + subtitle + 
+      		'Choose a date range '+
+		      '<a href="https://docs.google.com/spreadsheets/d/1aZyNbAg9nGH9_plA5XSWu5w-vgyPnsVayFOZdekUxwo/edit#gid=0">7</a>, '+
+		      '<a href="https://docs.google.com/spreadsheets/d/12klG2YjY2QFNbTLxaEkQPxwz_7O75iSthzMcLFcdNlE/edit#gid=0">14</a> or '+
+		      '<a href="https://docs.google.com/spreadsheets/d/1DOzMxTA1hxiS6Y-w6P6gZpBnUZbTBOxeNI9h8QOl2M4/edit#gid=0">28</a><br>'+
+		      '</div>');
       }
 
       $('.map-title h3').click(function() { location.reload(); });
