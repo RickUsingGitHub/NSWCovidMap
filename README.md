@@ -4,7 +4,7 @@ Customize Leaflet maps with a linked Google Sheets template and GeoJSON data on 
 ![Preview](preview.jpg)
 
 ## Live links (replace with your own)
-- Leaflet Map https://rickusinggithub.github.io/leaflet-maps-with-google-sheets/
+- Leaflet Map https://rickusinggithub.github.io/NSWCovidMap/
 - Google Sheets template https://docs.google.com/spreadsheets/d/12klG2YjY2QFNbTLxaEkQPxwz_7O75iSthzMcLFcdNlE/edit#gid=0
 
 ## Create your own
