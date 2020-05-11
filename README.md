@@ -1,8 +1,8 @@
-# COVID Map of NSW
+# COVID Map of NSW - Created by Rick
 
 ![Preview](preview.jpg)
 
-## Live links (replace with your own)
+## Live links
 - Leaflet Map https://rickusinggithub.github.io/NSWCovidMap/
 - Google Sheets template https://docs.google.com/spreadsheets/d/12klG2YjY2QFNbTLxaEkQPxwz_7O75iSthzMcLFcdNlE
 
