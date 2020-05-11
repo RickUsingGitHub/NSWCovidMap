@@ -1,6 +1,8 @@
 $(window).on('load', function() {
   var documentSettings = {};
   var markerColors = [];
+	
+  var pointsvisibletotal = 0;
 
   var polygonSettings = [];
   var polygonSheets = 1;
@@ -177,7 +179,7 @@ $(window).on('load', function() {
       }
     }
 
-    $('#points-legend').prepend('<h6 class="pointer">' + getSetting('_pointsLegendTitle') + '</h6>');
+    $('#points-legend').prepend('<h6 class="pointer">' + getSetting('_pointsLegendTitle') + '(' + pointsvisibletotal + ')</h6>');
     if (getSetting('_pointsLegendIcon') != '') {
       $('#points-legend h6').prepend('<span class="legend-icon"><i class="fa '
         + getSetting('_pointsLegendIcon') + '"></i></span>');
@@ -218,6 +220,8 @@ $(window).on('load', function() {
             pointsVisible.push(points[i]);
           }
         }
+	
+	pointsvisibletotal = pointsVisible.length;
 
         tableData = pointsToTableData(pointsVisible);
 
