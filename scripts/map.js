@@ -222,8 +222,9 @@ $(window).on('load', function() {
         }
 	
 	pointsvisibletotal = pointsVisible.length;
-        addTitle();
-
+	var dispTitle = getSetting('_mapTitleDisplay');
+    var title = '<h3 class="pointer">Showing ' + pointsvisibletotal + "cases out of " + getSetting('_mapTitle') + '</h3>';
+    $('.map-title h3').replacewith(title);
 
         tableData = pointsToTableData(pointsVisible);
 
@@ -693,6 +694,7 @@ $(window).on('load', function() {
       togglePolygonLabels();
     });
 
+	// first time...
     addTitle();
 
     // Change Map attribution to include author's info + urls
@@ -765,7 +767,7 @@ $(window).on('load', function() {
       var subtitle = '<h5>' + getSetting('_mapSubtitle') + '</h5>';
 
       if (dispTitle == 'topleft') {
-        $('div.leaflet-top').replaceWith('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + title + subtitle + '</div>');
+        $('div.leaflet-top').prepend('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + title + subtitle + '</div>');
       } else if (dispTitle == 'topcenter') {
         $('#map').append('<div class="div-center"></div>');
         $('.div-center').append('<div class="map-title leaflet-bar leaflet-control leaflet-control-custom">' + 
