@@ -759,7 +759,7 @@ $(window).on('load', function() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
     if (dispTitle !== 'off') {
-      var title = '<h3 class="pointer">' + pointsVisiblelength + "/" + getSetting('_mapTitle') + '</h3>';
+      var title = '<h3 class="pointer">' + pointsvisibletotal + "/" + getSetting('_mapTitle') + '</h3>';
       var subtitle = '<h5>' + getSetting('_mapSubtitle') + '</h5>';
       var daycontroller = '<b>How many days worth would you like?</b> ' + 
                           '<a href="https://rickusinggithub.github.io/NSWCovidMap/?gdoc=https://docs.google.com/spreadsheets/d/1aZyNbAg9nGH9_plA5XSWu5w-vgyPnsVayFOZdekUxwo/edit#gid=0">7</a>'+
