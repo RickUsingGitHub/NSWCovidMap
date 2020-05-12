@@ -45,6 +45,10 @@ h6 {
   border-radius: 5px;
 }
 
+.leaflet-control-layer {
+    min-width: 300px;
+}
+
 .leaflet-control-geocoder {
   z-index: 9999;
 }
