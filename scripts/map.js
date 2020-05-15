@@ -905,7 +905,7 @@ $(window).on('load', function() {
     var url = getSetting('_authorURL');
 
     var credit = 'View <a href="' + googleDocURL + '" target="_blank">DATA</a>/' +
-                  '<a href="' + getSetting('_githubRepo') + '" target="_blank">CODE</a> by' + name;
+                  '<a href="' + getSetting('_githubRepo') + '" target="_blank">CODE</a> by ' + name;
     
     $('.leaflet-control-attribution')[0].innerHTML = credit;
   }
