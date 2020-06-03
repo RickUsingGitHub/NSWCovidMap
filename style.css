@@ -49,6 +49,10 @@ h6 {
     min-width: 300px;
 }
 
+.leaflet-popup-content-wrapper {
+    bottom: -20px !important;
+}
+
 .leaflet-control-geocoder {
   z-index: 9999;
 }
