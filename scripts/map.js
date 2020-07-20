@@ -223,7 +223,7 @@ $(window).on('load', function() {
 	
 	pointsvisibletotal = pointsVisible.length;
 	var dispTitle = getSetting('_mapTitleDisplay');
-        var title = '<h3 class="pointer">Showing ' + pointsvisibletotal + " of " + getSetting('_mapTitle') + '</h3>';
+        var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
         $('.map-title h3').replaceWith(title);
 
         tableData = pointsToTableData(pointsVisible);
