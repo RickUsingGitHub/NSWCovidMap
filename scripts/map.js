@@ -763,7 +763,7 @@ $(window).on('load', function() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
     if (dispTitle !== 'off') {
-      var title = '<h3 class="pointer">Showing ' + pointsvisibletotal + "cases out of " + getSetting('_mapTitle') + '</h3>';
+      var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
       var subtitle = '<h5>' + getSetting('_mapSubtitle') + '</h5>';
 
       if (dispTitle == 'topleft') {
