@@ -6,8 +6,8 @@ Version: 1.0
 
 /* Marker setup */
 .awesome-marker {
-    margin-top:-42px;
-    margin-left: -17px;
+    margin-top:-21px;
+    margin-left: -8.5px;
     position:absolute;
     left:0;
     top:0;
@@ -21,8 +21,8 @@ Version: 1.0
 
 .awesome-marker-shadow {
     background: url('images/markers-shadow.png') no-repeat 0 0;
-    width: 36px;
-    height: 16px;
+    width: 18px;
+    height: 8px;
 }
 
 /* Retina displays */
@@ -36,9 +36,9 @@ Version: 1.0
 
 .awesome-marker i {
     color: #333;
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 7px;
 }
 
 .awesome-marker .icon-white {
