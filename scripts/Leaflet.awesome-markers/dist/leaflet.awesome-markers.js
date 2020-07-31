@@ -20,8 +20,8 @@
 
     L.AwesomeMarkers.Icon = L.Icon.extend({
         options: {
-            shadowAnchor: [10, 12],
-            shadowSize: [36, 16],
+            shadowAnchor: [5, 6],
+            shadowSize: [18, 8],
             className: 'awesome-marker',
             icon: 'block',
             markerColor: 'white',
@@ -40,24 +40,26 @@
             var icongroup = document.createElementNS('http://www.w3.org/2000/svg', "g");
             var icon = document.createElementNS('http://www.w3.org/2000/svg', "text");
 
-            svg.setAttribute('width', '31');
-            svg.setAttribute('height', '42');
+            svg.setAttribute('width', '15.5'); // 31
+            svg.setAttribute('height', '21'); // 42
             svg.setAttribute('class', 'awesome-marker');
             svg.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
             
-            backgroundCircle.setAttribute('cx', '15.5');
-            backgroundCircle.setAttribute('cy', '15');
-            backgroundCircle.setAttribute('r', '11');
+            backgroundCircle.setAttribute('cx', '7.75');    // 15.5
+            backgroundCircle.setAttribute('cy', '7.5');      // 15
+            backgroundCircle.setAttribute('r', '5.5');       // 11
             backgroundCircle.setAttribute('fill', options.markerColor);
 
-            //path.setAttributeNS(null, "d", "M15.6,1c-7.7,0-14,6.3-14,14c0,10.5,14,26,14,26s14-15.5,14-26C29.6,7.3,23.3,1,15.6,1z");
+            path.setAttributeNS(null, "d", "M7.8,0.5c-3.85,0-7,3.15-7,7c0,5.75,7,13,7,13s7-7.75,7-13C14.8,3.615,11.615,0.5,7.8,0.5z");
+            // path.setAttributeNS(null, "d", "M15.6,1c-7.7,0-14,6.3-14,14c0,10.5,14,26,14,26s14-15.5,14-26C29.6,7.3,23.3,1,15.6,1z");
+
             //path.setAttribute('class', 'awesome-marker-background');
             path.setAttribute('stroke', 'white');
             path.setAttribute('style', 'fill:' + options.markerColor)
 
             icon.textContent = options.icon;
-            icon.setAttribute('x', '7');
-            icon.setAttribute('y', '23');
+            icon.setAttribute('x', '3.5');
+            icon.setAttribute('y', '11.5');
             icon.setAttribute('class', 'material-icons');
             icon.setAttribute('fill', options.iconColor);
             icon.setAttribute('font-family', 'Material Icons');
