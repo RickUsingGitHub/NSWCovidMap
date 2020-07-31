@@ -21,7 +21,7 @@
     L.AwesomeMarkers.Icon = L.Icon.extend({
         options: {
             shadowAnchor: [5, 6],
-            shadowSize: [18, 8],
+            shadowSize: [36, 16],
             className: 'awesome-marker',
             icon: 'block',
             markerColor: 'white',
