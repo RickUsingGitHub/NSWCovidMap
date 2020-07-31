@@ -57,6 +57,10 @@ h6 {
   z-index: 9999;
 }
 
+.leaflet-zoom-animated {
+	bottom: 14px !important;
+}
+
 form {
   margin-top: 2px;
 }
